@@ -1,0 +1,3455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UT<F>-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Only For My Love ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+    rel="stylesheet"
+>
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+*{
+    box-sizing:border-box;
+}
+
+html,
+body{
+    width:100%;
+    height:100%;
+    margin:0;
+}
+
+body{
+    overflow:hidden;
+    font-family:Arial,sans-serif;
+    color:#fff;
+}
+
+
+/* =========================
+   MAIN BACKGROUND
+========================= */
+
+#welcomeScreen{
+
+    position:fixed;
+
+    inset:0;
+
+    width:100vw;
+    height:100vh;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    overflow:hidden;
+
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            #650000 0%,
+            #470000 30%,
+            #2C0000 60%,
+            #1A0000 100%
+        );
+}
+
+
+/* =========================
+   SOFT HEARTS
+========================= */
+
+.background-hearts{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+    z-index:1;
+}
+
+.background-hearts span{
+
+    position:absolute;
+
+    color:#ff3030;
+
+    opacity:.14;
+
+    filter:blur(3px);
+
+    font-size:42px;
+
+    animation:
+        floatHeart 7s ease-in-out infinite;
+}
+
+.background-hearts span:nth-child(1){
+    left:5%;
+    top:14%;
+}
+
+.background-hearts span:nth-child(2){
+    right:7%;
+    top:20%;
+    font-size:52px;
+}
+
+.background-hearts span:nth-child(3){
+    left:10%;
+    bottom:12%;
+}
+
+.background-hearts span:nth-child(4){
+    right:11%;
+    bottom:17%;
+    font-size:50px;
+}
+
+.background-hearts span:nth-child(5){
+    left:46%;
+    top:6%;
+    font-size:35px;
+}
+
+.background-hearts span:nth-child(6){
+    right:43%;
+    bottom:5%;
+    font-size:32px;
+}
+
+@keyframes floatHeart{
+
+    0%,100%{
+        transform:
+            translateY(0)
+            scale(1);
+    }
+
+    50%{
+        transform:
+            translateY(-18px)
+            scale(1.08);
+    }
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.password-page{
+
+    position:relative;
+
+    z-index:5;
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+}
+
+
+/* =========================
+   TOP TEXT
+========================= */
+
+.top-love{
+
+    margin:0 0 14px;
+
+    color:#fff;
+
+    font-size:15px;
+
+    letter-spacing:.8px;
+}
+
+
+/* =========================
+   CURSIVE TITLE
+========================= */
+
+.password-title{
+
+    margin:0 0 30px;
+
+    color:#F5E6D3;
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:56px;
+
+    font-weight:400;
+
+    line-height:1;
+
+    text-shadow:
+        0 0 12px rgba(255,220,210,.22),
+        0 0 30px rgba(255,70,90,.12);
+}
+
+
+/* =========================
+   3D GIFT BOX
+========================= */
+
+.lock-card{
+
+    position:relative;
+
+    width:400px;
+    height:400px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:35px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #430909,
+            #2B0000 55%,
+            #190000
+        );
+
+    border:2px solid rgba(255,255,255,.92);
+
+    border-radius:12px;
+
+    box-shadow:
+
+        0 3px 0 rgba(255,255,255,.15),
+
+        0 9px 0 #650000,
+
+        0 20px 40px rgba(0,0,0,.7),
+
+        inset 0 2px 0
+        rgba(255,255,255,.13),
+
+        inset 0 -18px 30px
+        rgba(0,0,0,.3);
+
+    transform:
+        perspective(900px)
+        rotateX(2deg);
+}
+
+
+/* =========================
+   GOLDEN LOCK
+========================= */
+
+.lock-icon{
+
+    position:relative;
+
+    width:70px;
+    height:75px;
+
+    margin-bottom:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    filter:
+        drop-shadow(
+            0 5px 8px
+            rgba(0,0,0,.5)
+        );
+}
+
+
+/* SHACKLE */
+
+.lock-shackle{
+
+    position:absolute;
+
+    top:0;
+    left:19px;
+
+    width:32px;
+    height:36px;
+
+    border:6px solid #F6B73C;
+
+    border-bottom:0;
+
+    border-radius:
+        20px 20px 0 0;
+
+    box-shadow:
+        inset 0 2px 2px
+        rgba(255,255,255,.5);
+}
+
+
+/* LOCK BODY */
+
+.lock-body{
+
+    position:absolute;
+
+    bottom:0;
+    left:8px;
+
+    width:54px;
+    height:44px;
+
+    border-radius:8px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #FFE98A 0%,
+            #F6B73C 40%,
+            #C87508 100%
+        );
+
+    border:2px solid #FFE9A6;
+
+    box-shadow:
+
+        inset 0 2px 3px
+        rgba(255,255,255,.6),
+
+        inset 0 -6px 8px
+        rgba(120,60,0,.25),
+
+        0 5px 9px
+        rgba(0,0,0,.4);
+}
+
+
+/* KEYHOLE */
+
+.lock-keyhole{
+
+    position:absolute;
+
+    top:11px;
+    left:21px;
+
+    width:10px;
+    height:18px;
+
+    background:#542600;
+
+    border-radius:
+        50% 50% 4px 4px;
+}
+
+
+/* =========================
+   LOCKED TEXT
+========================= */
+
+.lock-card h2{
+
+    margin:0 0 10px;
+
+    color:#fff;
+
+    font-size:21px;
+
+    font-weight:700;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.lock-card p{
+
+    margin:0 0 24px;
+
+    color:
+        rgba(255,255,255,.72);
+
+    font-size:13px;
+
+    line-height:1.5;
+}
+
+
+/* =========================
+   PASSWORD INPUT
+========================= */
+
+#secretPassword{
+
+    width:290px;
+    max-width:100%;
+
+    height:48px;
+
+    margin:0 0 20px;
+
+    padding:10px 15px;
+
+    background:#1A0000;
+
+    color:#fff;
+
+    border:1px solid
+        rgba(255,255,255,.9);
+
+    border-radius:5px;
+
+    outline:none;
+
+    text-align:center;
+
+    font-size:15px;
+
+    letter-spacing:4px;
+
+    box-shadow:
+        inset 0 2px 8px
+        rgba(0,0,0,.45);
+}
+
+#secretPassword::placeholder{
+
+    color:
+        rgba(255,255,255,.45);
+
+    letter-spacing:1px;
+}
+
+#secretPassword:focus{
+
+    box-shadow:
+
+        0 0 15px
+        rgba(255,255,255,.13),
+
+        inset 0 2px 8px
+        rgba(0,0,0,.45);
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.unlock-button{
+
+    padding:12px 38px;
+
+    background:transparent;
+
+    color:#fff;
+
+    border:1px solid
+        rgba(255,255,255,.9);
+
+    border-radius:5px;
+
+    font-size:13px;
+
+    letter-spacing:3px;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+}
+
+.unlock-button:hover{
+
+    background:
+        rgba(255,255,255,.08);
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 5px 15px
+        rgba(0,0,0,.35);
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+#passwordMessage{
+
+    min-height:20px;
+
+    margin-top:14px;
+
+    color:#F5E6D3;
+
+    font-size:13px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:600px){
+
+    .password-title{
+
+        font-size:44px;
+
+        margin-bottom:24px;
+    }
+
+    .lock-card{
+
+        width:340px;
+
+        height:380px;
+
+        max-width:88vw;
+    }
+
+}
+
+/* =========================
+   PAGE 2 — BIRTHDAY
+========================= */
+
+#birthdayPage{
+
+    position:fixed;
+
+    inset:0;
+
+    width:100vw;
+    height:100vh;
+
+    display:none;
+
+    align-items:center;
+    justify-content:center;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #5A0000 0%,
+            #3A0000 38%,
+            #220000 70%,
+            #120000 100%
+        );
+
+    z-index:20;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.birthday-content{
+
+    position:relative;
+
+    z-index:5;
+
+    width:100%;
+
+    max-width:850px;
+
+    padding:30px 20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+}
+
+
+/* =========================
+   SMALL TEXT
+========================= */
+
+.birthday-small{
+
+    margin-bottom:8px;
+
+    color:
+        rgba(255,255,255,.72);
+
+    font-size:14px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+}
+
+
+/* =========================
+   BIRTHDAY TITLE
+========================= */
+
+.birthday-content h1{
+
+    margin:0 0 28px;
+
+    color:#F5E6D3;
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:64px;
+
+    font-weight:400;
+
+    line-height:1.05;
+
+    text-shadow:
+
+        0 0 12px
+        rgba(255,220,210,.25),
+
+        0 0 35px
+        rgba(255,60,80,.18);
+}
+
+
+.birthday-content h1 span{
+
+    display:block;
+
+    margin-top:5px;
+
+    font-size:48px;
+
+    color:#FFFFFF;
+}
+
+
+/* =========================
+   VIDEO AREA
+========================= */
+
+.birthday-video{
+
+    position:relative;
+
+    width:520px;
+
+    max-width:88vw;
+
+    aspect-ratio:16 / 9;
+
+    margin-bottom:30px;
+
+    overflow:hidden;
+
+    background:#180000;
+
+    border:1px solid
+        rgba(255,255,255,.55);
+
+    border-radius:14px;
+
+    box-shadow:
+
+        0 15px 40px
+        rgba(0,0,0,.55),
+
+        0 0 30px
+        rgba(255,0,40,.12);
+}
+
+
+/* PLACEHOLDER */
+
+.video-placeholder{
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    font-size:55px;
+
+    color:
+        rgba(255,255,255,.65);
+
+    background:
+        linear-gradient(
+            135deg,
+            #3A0000,
+            #210000
+        );
+}
+
+
+/* =========================
+   HEART BUTTON
+========================= */
+
+.heart-button{
+
+    min-width:190px;
+
+    padding:14px 28px;
+
+    background:
+        rgba(255,255,255,.04);
+
+    color:#FFFFFF;
+
+    border:1px solid
+        rgba(255,255,255,.85);
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    letter-spacing:1px;
+
+    cursor:pointer;
+
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        box-shadow .3s ease;
+}
+
+
+.heart-button:hover{
+
+    transform:
+        translateY(-3px);
+
+    background:
+        rgba(255,255,255,.09);
+
+    box-shadow:
+        0 8px 25px
+        rgba(0,0,0,.35);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:600px){
+
+    .birthday-content{
+
+        padding:
+            20px 15px;
+    }
+
+
+    .birthday-content h1{
+
+        font-size:48px;
+
+        margin-bottom:22px;
+    }
+
+
+    .birthday-content h1 span{
+
+        font-size:38px;
+    }
+
+
+    .birthday-video{
+
+        width:92vw;
+
+        margin-bottom:25px;
+
+        border-radius:10px;
+    }
+
+
+    .video-placeholder{
+
+        font-size:42px;
+    }
+
+}
+
+    /* =========================
+       PAGE 3 — SOUNDTRACK
+    ========================= */
+
+    #soundtrackPage{
+
+        position:fixed;
+
+        inset:0;
+
+        width:100vw;
+        height:100vh;
+
+        display:none;
+
+        align-items:center;
+        justify-content:center;
+
+        overflow:hidden;
+
+        text-align:center;
+
+        background:
+            radial-gradient(
+                circle at center,
+                #5A0000 0%,
+                #390000 40%,
+                #210000 72%,
+                #120000 100%
+            );
+
+        z-index:30;
+    }
+
+
+    .soundtrack-content{
+
+        position:relative;
+
+        z-index:5;
+
+        width:100%;
+
+        max-width:700px;
+
+        padding:30px 20px;
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        justify-content:center;
+    }
+
+
+    /* MUSIC SYMBOL */
+
+    .soundtrack-icon{
+
+        width:64px;
+        height:64px;
+
+        margin-bottom:12px;
+
+        display:flex;
+
+        align-items:center;
+        justify-content:center;
+
+        border:1px solid
+            rgba(255,255,255,.45);
+
+        border-radius:50%;
+
+        color:#F5E6D3;
+
+        font-size:30px;
+
+        background:
+            rgba(255,255,255,.04);
+
+        box-shadow:
+            0 0 25px
+            rgba(255,50,70,.12);
+    }
+
+
+    /* SMALL TEXT */
+
+    .soundtrack-small{
+
+        margin:0 0 8px;
+
+        color:
+            rgba(255,255,255,.65);
+
+        font-size:13px;
+
+        letter-spacing:2px;
+
+        text-transform:uppercase;
+    }
+
+
+    /* TITLE */
+
+    .soundtrack-content h1{
+
+        margin:0 0 35px;
+
+        color:#F5E6D3;
+
+        font-family:
+            "Great Vibes",
+            cursive;
+
+        font-size:58px;
+
+        font-weight:400;
+
+        line-height:1.05;
+
+        text-shadow:
+            0 0 15px
+            rgba(255,220,210,.2);
+    }
+
+
+    .soundtrack-content h1 span{
+
+        display:block;
+
+        margin-top:6px;
+
+        font-size:42px;
+
+        color:#fff;
+    }
+
+
+    /* MUSIC CARD */
+
+    .music-card{
+
+        width:500px;
+
+        max-width:90vw;
+
+        min-height:120px;
+
+        margin-bottom:30px;
+
+        padding:20px 22px;
+
+        display:flex;
+
+        align-items:center;
+
+        gap:18px;
+
+        text-align:left;
+
+        background:
+            linear-gradient(
+                145deg,
+                rgba(80,0,0,.8),
+                rgba(30,0,0,.9)
+            );
+
+        border:1px solid
+            rgba(255,255,255,.35);
+
+        border-radius:14px;
+
+        box-shadow:
+            0 15px 35px
+            rgba(0,0,0,.45),
+
+            inset 0 1px 0
+            rgba(255,255,255,.08);
+    }
+
+
+    /* DISC */
+
+    .music-disc{
+
+        flex-shrink:0;
+
+        width:72px;
+        height:72px;
+
+        display:flex;
+
+        align-items:center;
+        justify-content:center;
+
+        border-radius:50%;
+
+        color:#F5E6D3;
+
+        font-size:30px;
+
+        background:
+            radial-gradient(
+                circle,
+                #7A1111 0%,
+                #420000 55%,
+                #200000 100%
+            );
+
+        border:1px solid
+            rgba(255,255,255,.3);
+
+        box-shadow:
+            0 0 20px
+            rgba(255,40,60,.15);
+    }
+
+
+    /* MUSIC INFO */
+
+    .music-info{
+
+        flex:1;
+    }
+
+
+    .music-title{
+
+        color:#fff;
+
+        font-size:17px;
+
+        margin-bottom:6px;
+    }
+
+
+    .music-subtitle{
+
+        color:
+            rgba(255,255,255,.55);
+
+        font-size:12px;
+    }
+
+
+    /* PLAY BUTTON */
+
+    .music-play-button{
+
+        width:48px;
+        height:48px;
+
+        flex-shrink:0;
+
+        border:1px solid
+            rgba(255,255,255,.75);
+
+        border-radius:50%;
+
+        background:transparent;
+
+        color:#fff;
+
+        font-size:16px;
+
+        cursor:pointer;
+
+        transition:.3s ease;
+    }
+
+
+    .music-play-button:hover{
+
+        background:
+            rgba(255,255,255,.1);
+
+        transform:
+            scale(1.08);
+    }
+
+
+    /* MEMORIES BUTTON */
+
+    .memories-button{
+
+        padding:14px 30px;
+
+        background:transparent;
+
+        color:#fff;
+
+        border:1px solid
+            rgba(255,255,255,.8);
+
+        border-radius:30px;
+
+        font-size:13px;
+
+        letter-spacing:1px;
+
+        cursor:pointer;
+
+        transition:.3s ease;
+    }
+
+
+    .memories-button:hover{
+
+        background:
+            rgba(255,255,255,.08);
+
+        transform:
+            translateY(-2px);
+
+        box-shadow:
+            0 8px 20px
+            rgba(0,0,0,.3);
+    }
+
+
+    /* MOBILE */
+
+    @media(max-width:600px){
+
+        .soundtrack-content{
+
+            padding:
+                20px 15px;
+        }
+
+
+        .soundtrack-content h1{
+
+            font-size:45px;
+
+            margin-bottom:28px;
+        }
+
+
+        .soundtrack-content h1 span{
+
+            font-size:34px;
+        }
+
+
+        .music-card{
+
+            width:92vw;
+
+            padding:16px;
+
+            gap:12px;
+        }
+
+
+        .music-disc{
+
+            width:60px;
+            height:60px;
+        }
+
+    }
+
+/* =========================
+   PAGE 4 — MEMORIES
+========================= */
+
+#memoriesPage{
+
+    position:fixed;
+
+    inset:0;
+
+    width:100vw;
+    height:100vh;
+
+    display:none;
+
+    align-items:center;
+    justify-content:center;
+
+    overflow-y:auto;
+
+    text-align:center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #590000 0%,
+            #380000 42%,
+            #210000 72%,
+            #120000 100%
+        );
+
+    z-index:40;
+}
+
+
+/* CONTENT */
+
+.memories-content{
+
+    width:100%;
+
+    max-width:900px;
+
+    padding:45px 25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+}
+
+
+/* SMALL TEXT */
+
+.memories-small{
+
+    margin:0 0 8px;
+
+    color:
+        rgba(255,255,255,.65);
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+}
+
+
+/* TITLE */
+
+.memories-content h1{
+
+    margin:0 0 12px;
+
+    color:#F5E6D3;
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:58px;
+
+    font-weight:400;
+
+    line-height:1;
+}
+
+
+.memories-content h1 span{
+
+    display:block;
+
+    margin-top:5px;
+
+    color:#fff;
+
+    font-size:44px;
+}
+
+
+/* SUBTITLE */
+
+.memories-subtitle{
+
+    max-width:500px;
+
+    margin:0 0 28px;
+
+    color:
+        rgba(255,255,255,.62);
+
+    font-size:13px;
+
+    line-height:1.6;
+}
+
+
+/* =========================
+   PHOTO GRID
+========================= */
+
+.memory-grid{
+
+    width:100%;
+
+    max-width:720px;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:14px;
+
+    margin-bottom:30px;
+}
+
+
+/* PHOTO PLACEHOLDER */
+
+.memory-photo{
+
+    position:relative;
+
+    width:100%;
+
+    aspect-ratio:1 / 1;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    overflow:hidden;
+
+    background:
+        linear-gradient(
+            145deg,
+            #4A0808,
+            #230000
+        );
+
+    border:1px solid
+        rgba(255,255,255,.35);
+
+    border-radius:14px;
+
+    box-shadow:
+
+        0 15px 30px
+        rgba(0,0,0,.5),
+
+        0 5px 10px
+        rgba(0,0,0,.3),
+
+        inset 0 1px 0
+        rgba(255,255,255,.15),
+
+        inset 0 -2px 5px
+        rgba(0,0,0,.35);
+
+    transform:
+        perspective(800px)
+        translateZ(0);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+.memory-photo:hover{
+
+    transform:
+        translateY(-4px)
+        scale(1.02);
+
+    box-shadow:
+
+        0 12px 25px
+        rgba(0,0,0,.5),
+
+        0 0 20px
+        rgba(255,40,60,.1);
+}
+
+
+/* HEART PLACEHOLDER */
+
+.memory-photo span{
+
+    color:
+        rgba(255,255,255,.45);
+
+    font-size:38px;
+
+    font-family:Arial,sans-serif;
+}
+
+
+/* =========================
+   NOTE BUTTON
+========================= */
+
+.note-button{
+
+    padding:14px 32px;
+
+    background:transparent;
+
+    color:#fff;
+
+    border:1px solid
+        rgba(255,255,255,.8);
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    letter-spacing:1px;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+}
+
+
+.note-button:hover{
+
+    background:
+        rgba(255,255,255,.08);
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(0,0,0,.3);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:600px){
+
+    .memories-content{
+
+        padding:
+            35px 15px;
+    }
+
+
+    .memories-content h1{
+
+        font-size:46px;
+    }
+
+
+    .memories-content h1 span{
+
+        font-size:36px;
+    }
+
+
+    .memory-grid{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+        gap:10px;
+
+        max-width:500px;
+    }
+
+
+    .memories-subtitle{
+
+        font-size:12px;
+
+        margin-bottom:22px;
+    }
+
+}
+
+/* =========================
+   PAGE 5 — THE NOTE
+========================= */
+
+#notePage{
+
+    position:fixed;
+
+    inset:0;
+
+    width:100vw;
+    height:100vh;
+
+    display:none;
+
+    align-items:center;
+    justify-content:center;
+
+    overflow-y:auto;
+
+    text-align:center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #5A0000 0%,
+            #380000 42%,
+            #210000 72%,
+            #120000 100%
+        );
+
+    z-index:50;
+}
+
+
+/* CONTENT */
+
+.note-content{
+
+    width:100%;
+
+    max-width:760px;
+
+    padding:45px 25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+}
+
+
+/* SMALL TEXT */
+
+.note-small{
+
+    margin:0 0 8px;
+
+    color:
+        rgba(255,255,255,.65);
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+}
+
+
+/* TITLE */
+
+.note-content h1{
+
+    margin:0 0 30px;
+
+    color:#F5E6D3;
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:60px;
+
+    font-weight:400;
+
+    line-height:1;
+}
+
+
+.note-content h1 span{
+
+    display:block;
+
+    margin-top:5px;
+
+    color:#fff;
+
+    font-size:44px;
+}
+
+
+/* =========================
+   NOTE PAPER
+========================= */
+
+.note-paper{
+
+    width:650px;
+
+    max-width:90vw;
+
+    min-height:230px;
+
+    padding:30px 35px;
+
+    margin-bottom:30px;
+
+    text-align:left;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(70,8,8,.95),
+            rgba(35,0,0,.98)
+        );
+
+    border:1px solid
+        rgba(255,255,255,.32);
+
+    border-radius:12px;
+
+    box-shadow:
+
+        0 15px 40px
+        rgba(0,0,0,.5),
+
+        inset 0 1px 0
+        rgba(255,255,255,.08);
+}
+
+
+/* TYPING TEXT */
+
+#loveNote{
+
+    color:#F8EDE3;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:16px;
+
+    line-height:1.9;
+
+    white-space:pre-wrap;
+
+    min-height:170px;
+}
+
+
+/* CURSOR */
+
+#loveNote::after{
+
+    content:"|";
+
+    display:inline-block;
+
+    margin-left:2px;
+
+    color:#F5E6D3;
+
+    animation:
+        noteCursor .8s infinite;
+}
+
+
+@keyframes noteCursor{
+
+    0%,50%{
+        opacity:1;
+    }
+
+    51%,100%{
+        opacity:0;
+    }
+}
+
+
+/* BUTTON */
+
+.note-button{
+
+    padding:14px 32px;
+
+    background:transparent;
+
+    color:#fff;
+
+    border:1px solid
+        rgba(255,255,255,.8);
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    letter-spacing:1px;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+}
+
+
+.note-button:hover{
+
+    background:
+        rgba(255,255,255,.08);
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(0,0,0,.3);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:600px){
+
+    .note-content{
+
+        padding:
+            35px 15px;
+    }
+
+
+    .note-content h1{
+
+        font-size:46px;
+
+        margin-bottom:22px;
+    }
+
+
+    .note-content h1 span{
+
+        font-size:36px;
+    }
+
+
+    .note-paper{
+
+        width:92vw;
+
+        padding:25px 22px;
+
+        min-height:260px;
+    }
+
+
+    #loveNote{
+
+        font-size:14px;
+
+        line-height:1.8;
+    }
+
+}
+
+/* =========================
+   PAGE 6 — LIVE QUIZ
+========================= */
+
+#quizPage{
+
+    position:fixed;
+
+    inset:0;
+
+    width:100vw;
+    height:100vh;
+
+    display:none;
+
+    align-items:center;
+    justify-content:center;
+
+    overflow-y:auto;
+
+    text-align:center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #5A0000 0%,
+            #380000 42%,
+            #210000 72%,
+            #120000 100%
+        );
+
+    z-index:60;
+}
+
+
+/* CONTENT */
+
+.quiz-content{
+
+    width:100%;
+
+    max-width:700px;
+
+    padding:40px 20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+}
+
+
+/* SMALL TEXT */
+
+.quiz-small{
+
+    margin:0 0 8px;
+
+    color:
+        rgba(255,255,255,.65);
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+}
+
+
+/* TITLE */
+
+.quiz-content h1{
+
+    margin:0 0 30px;
+
+    color:#F5E6D3;
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:60px;
+
+    font-weight:400;
+
+    line-height:1;
+}
+
+
+.quiz-content h1 span{
+
+    display:block;
+
+    margin-top:5px;
+
+    color:#fff;
+
+    font-size:44px;
+}
+
+
+/* =========================
+   QUIZ CARD
+========================= */
+
+.quiz-card{
+
+    width:560px;
+
+    max-width:90vw;
+
+    padding:30px 25px;
+
+    margin-bottom:25px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(70,8,8,.95),
+            rgba(30,0,0,.98)
+        );
+
+    border:1px solid
+        rgba(255,255,255,.35);
+
+    border-radius:14px;
+
+    box-shadow:
+
+        0 15px 40px
+        rgba(0,0,0,.5),
+
+        inset 0 1px 0
+        rgba(255,255,255,.08);
+}
+
+
+/* QUESTION NUMBER */
+
+.quiz-number{
+
+    margin-bottom:18px;
+
+    color:
+        rgba(255,255,255,.5);
+
+    font-size:12px;
+
+    letter-spacing:1.5px;
+
+    text-transform:uppercase;
+}
+
+
+/* QUESTION */
+
+.quiz-card h2{
+
+    margin:0 0 25px;
+
+    color:#fff;
+
+    font-size:22px;
+
+    font-weight:400;
+
+    line-height:1.4;
+}
+
+
+/* OPTIONS */
+
+.quiz-options{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+}
+
+
+.quiz-options button{
+
+    width:100%;
+
+    padding:13px 18px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    color:
+        rgba(255,255,255,.9);
+
+    border:1px solid
+        rgba(255,255,255,.25);
+
+    border-radius:8px;
+
+    font-size:14px;
+
+    cursor:pointer;
+
+    transition:.25s ease;
+}
+
+
+.quiz-options button:hover{
+
+    background:
+        rgba(255,255,255,.09);
+
+    border-color:
+        rgba(255,255,255,.65);
+
+    transform:
+        translateY(-1px);
+}
+
+
+/* FEEDBACK */
+
+.quiz-feedback{
+
+    min-height:24px;
+
+    margin-top:18px;
+
+    color:#F5E6D3;
+
+    font-size:14px;
+
+    line-height:1.5;
+}
+
+
+/* NEXT BUTTON */
+
+#quizNextButton{
+
+    margin-top:2px;
+}
+
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .quiz-content{
+
+        padding:
+            30px 15px;
+    }
+
+
+    .quiz-content h1{
+
+        font-size:46px;
+    }
+
+
+    .quiz-content h1 span{
+
+        font-size:36px;
+    }
+
+
+    .quiz-card{
+
+        width:92vw;
+
+        padding:
+            25px 18px;
+    }
+
+
+    .quiz-card h2{
+
+        font-size:19px;
+    }
+
+}
+
+/* =========================
+   FINAL SURPRISE PAGE
+========================= */
+
+#finalPage{
+
+    position:fixed;
+
+    inset:0;
+
+    width:100vw;
+    height:100vh;
+
+    display:none;
+
+    align-items:center;
+    justify-content:center;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #650000 0%,
+            #3D0000 42%,
+            #220000 72%,
+            #110000 100%
+        );
+
+    z-index:70;
+}
+
+
+/* CONTENT */
+
+.final-content{
+
+    width:100%;
+
+    max-width:700px;
+
+    padding:35px 20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+}
+
+
+/* KEY */
+
+.final-key{
+
+    font-size:58px;
+
+    margin-bottom:15px;
+
+    filter:
+        drop-shadow(
+            0 5px 10px
+            rgba(0,0,0,.45)
+        );
+}
+
+
+/* SMALL TEXT */
+
+.final-small{
+
+    margin:0 0 8px;
+
+    color:
+        rgba(255,255,255,.65);
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+}
+
+
+/* TITLE */
+
+.final-content h1{
+
+    margin:0 0 35px;
+
+    color:#F5E6D3;
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:62px;
+
+    font-weight:400;
+
+    line-height:1;
+}
+
+
+.final-content h1 span{
+
+    display:block;
+
+    margin-top:6px;
+
+    color:#fff;
+
+    font-size:46px;
+}
+
+
+/* FINAL BUTTON */
+
+.final-open-button{
+
+    padding:15px 35px;
+
+    background:
+        rgba(255,255,255,.04);
+
+    color:#fff;
+
+    border:1px solid
+        rgba(255,255,255,.85);
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    letter-spacing:1px;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+}
+
+
+.final-open-button:hover{
+
+    transform:
+        translateY(-3px)
+        scale(1.02);
+
+    background:
+        rgba(255,255,255,.09);
+
+    box-shadow:
+        0 10px 30px
+        rgba(0,0,0,.4);
+}
+
+
+/* =========================
+   HEART CERTIFICATE PAGE
+========================= */
+
+#heartCertificatePage{
+
+    position:fixed;
+
+    inset:0;
+
+    width:100vw;
+    height:100vh;
+
+    display:none;
+
+    align-items:center;
+    justify-content:center;
+
+    overflow-y:auto;
+
+    text-align:center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #650000 0%,
+            #3A0000 45%,
+            #200000 75%,
+            #100000 100%
+        );
+
+    z-index:80;
+}
+
+
+.certificate-content{
+
+    width:100%;
+
+    max-width:750px;
+
+    padding:35px 20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+}
+
+
+/* FINAL VIDEO */
+
+.final-video{
+
+    width:420px;
+
+    max-width:88vw;
+
+    aspect-ratio:16 / 9;
+
+    margin-bottom:25px;
+
+    overflow:hidden;
+
+    border-radius:14px;
+
+    border:1px solid
+        rgba(255,255,255,.45);
+
+    box-shadow:
+
+        0 15px 40px
+        rgba(0,0,0,.5),
+
+        0 0 25px
+        rgba(255,40,60,.12);
+}
+
+
+.final-video-placeholder{
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    font-size:55px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #4A0000,
+            #200000
+        );
+}
+
+
+/* CERTIFICATE */
+
+.certificate-card{
+
+    width:600px;
+
+    max-width:90vw;
+
+    padding:30px 25px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(80,8,8,.9),
+            rgba(35,0,0,.96)
+        );
+
+    border:1px solid
+        rgba(245,230,211,.5);
+
+    box-shadow:
+
+        0 15px 40px
+        rgba(0,0,0,.5),
+
+        inset 0 1px 0
+        rgba(255,255,255,.08);
+}
+
+
+.certificate-small{
+
+    margin:0 0 5px;
+
+    color:
+        rgba(255,255,255,.55);
+
+    font-size:11px;
+
+    letter-spacing:3px;
+}
+
+
+.certificate-card h2{
+
+    margin:0 0 18px;
+
+    color:#F5E6D3;
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:48px;
+
+    font-weight:400;
+}
+
+
+.certificate-text{
+
+    margin:0;
+
+    color:#fff;
+
+    font-size:16px;
+}
+
+
+.certificate-love{
+
+    margin:8px 0 15px;
+
+    color:#F5E6D3;
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:32px;
+}
+
+
+.certificate-line{
+
+    width:160px;
+
+    height:1px;
+
+    margin:0 auto 18px;
+
+    background:
+        rgba(255,255,255,.5);
+}
+
+
+.certificate-present{
+
+    max-width:430px;
+
+    margin:0 auto 20px;
+
+    color:
+        rgba(255,255,255,.65);
+
+    font-size:13px;
+
+    line-height:1.7;
+}
+
+
+.certificate-card h3{
+
+    margin:0;
+
+    color:#fff;
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:42px;
+
+    font-weight:400;
+}
+
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .final-content h1{
+
+        font-size:48px;
+    }
+
+
+    .final-content h1 span{
+
+        font-size:37px;
+    }
+
+
+    .final-key{
+
+        font-size:48px;
+    }
+
+
+    .final-video{
+
+        width:92vw;
+    }
+
+
+    .certificate-card{
+
+        padding:
+            25px 18px;
+    }
+
+
+    .certificate-card h2{
+
+        font-size:40px;
+    }
+
+
+    .certificate-card h3{
+
+        font-size:36px;
+    }
+
+}
+
+.couple-video{
+
+    width:100%;
+    height:100%;
+
+    display:block;
+
+    object-fit:cover;
+
+}
+
+.memory-photo img{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.couple-photo{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:contain;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div id="welcomeScreen">
+
+
+    <!-- BACKGROUND HEARTS -->
+
+    <div class="background-hearts">
+
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+
+    <div class="password-page">
+
+
+        <div class="top-love">
+            Only For My Love 💖
+        </div>
+
+
+        <div class="password-title">
+            Enter the Password
+        </div>
+
+
+        <!-- GIFT BOX -->
+
+        <div class="lock-card">
+
+
+            <div class="lock-icon">
+
+                <div class="lock-shackle"></div>
+
+                <div class="lock-body">
+
+                    <div class="lock-keyhole"></div>
+
+                </div>
+
+            </div>
+
+
+            <h2>
+                This gift is locked
+            </h2>
+
+
+            <p>
+                Type the secret to unlock Surprise...
+            </p>
+
+
+            <input
+                type="password"
+                id="secretPassword"
+                placeholder="Enter password"
+                autocomplete="off"
+            >
+
+
+            <button
+                class="unlock-button"
+                onclick="unlockSurprise()"
+            >
+                UNLOCK
+            </button>
+
+
+            <div id="passwordMessage"></div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+function unlockSurprise(){
+
+    const input =
+        document.getElementById("secretPassword");
+
+    const message =
+        document.getElementById("passwordMessage");
+
+    const password =
+        input.value.trim();
+
+
+    if(password === "noor"){
+
+        message.textContent =
+            "Unlocked with love ❤️";
+
+
+        setTimeout(function(){
+
+            document.getElementById(
+                "welcomeScreen"
+            ).style.display = "none";
+
+
+            document.getElementById(
+                "birthdayPage"
+            ).style.display = "flex";
+
+        },700);
+
+
+    }else{
+
+        message.textContent =
+            "That's not the secret password ❤️";
+
+        input.value = "";
+
+        input.focus();
+
+    }
+
+}
+
+
+/* =========================
+   PAGE 2 → SOUNDTRACK
+========================= */
+
+function openHeart(){
+
+    document.getElementById(
+        "birthdayPage"
+    ).style.display = "none";
+
+
+    document.getElementById(
+        "soundtrackPage"
+    ).style.display = "flex";
+
+}
+
+
+/* =========================
+   PAGE 3 → MEMORIES
+========================= */
+
+function openMemories(){
+
+    document.getElementById(
+        "soundtrackPage"
+    ).style.display = "none";
+
+
+    document.getElementById(
+        "memoriesPage"
+    ).style.display = "flex";
+
+}
+
+
+/* =========================
+   PAGE 4 → NOTE
+========================= */
+
+function readNote(){
+
+    document.getElementById(
+        "memoriesPage"
+    ).style.display = "none";
+
+
+    document.getElementById(
+        "notePage"
+    ).style.display = "flex";
+
+
+    startLoveNote();
+
+}
+
+
+/* =========================
+   NOTE TYPEWRITER
+========================= */
+
+function startLoveNote(){
+
+    const note =
+        "My love, this little surprise is just a small way of telling you how special you are to me. Every moment, every smile, and every memory means more than I can put into words. ❤️";
+
+    const target =
+        document.getElementById("loveNote");
+
+    target.textContent = "";
+
+    let i = 0;
+
+    function type(){
+
+        if(i < note.length){
+
+            target.textContent +=
+                note.charAt(i);
+
+            i++;
+
+            setTimeout(type,45);
+
+        }
+
+    }
+
+    type();
+
+}
+
+
+/* =========================
+   QUIZ DATA
+========================= */
+
+const loveQuiz = [
+
+    {
+        question:
+            "How much do I love you?",
+
+        options: [
+            "A little ❤️",
+            "A lot 💕",
+            "More than words can say 🥹",
+            "It's impossible to measure ❤️"
+        ],
+
+        feedback:
+            "Exactly! There isn't really a number big enough. ❤️"
+    },
+
+
+    {
+        question:
+            "What do you think you mean to me?",
+
+        options: [
+            "Someone special ❤️",
+            "My favorite person 💕",
+            "My whole world 🌎",
+            "All of these 🥹"
+        ],
+
+        feedback:
+            "You already know the answer. You're my world. ❤️"
+    },
+
+
+    {
+        question:
+            "What would I choose?",
+
+        options: [
+            "A thousand gifts",
+            "A thousand memories",
+            "One more moment with you ❤️",
+            "All of them"
+        ],
+
+        feedback:
+            "I'd always choose another moment with you. ❤️"
+    },
+
+
+    {
+        question:
+            "And finally... will you stay in my story?",
+
+        options: [
+            "Maybe 👀",
+            "Of course ❤️",
+            "Always 🥹",
+            "You already know the answer 💕"
+        ],
+
+        feedback:
+            "Then I guess our story still has many pages left. ❤️"
+    }
+
+];
+
+
+let currentQuizQuestion = 0;
+
+
+/* =========================
+   OPEN QUIZ
+========================= */
+
+function openQuiz(){
+
+    document.getElementById(
+        "notePage"
+    ).style.display = "none";
+
+
+    document.getElementById(
+        "quizPage"
+    ).style.display = "flex";
+
+
+    currentQuizQuestion = 0;
+
+
+    showQuizQuestion();
+
+}
+
+
+/* =========================
+   SHOW QUESTION
+========================= */
+
+function showQuizQuestion(){
+
+    const quiz =
+        loveQuiz[currentQuizQuestion];
+
+
+    document.getElementById(
+        "quizNumber"
+    ).textContent =
+        "Question " +
+        (currentQuizQuestion + 1) +
+        " of " +
+        loveQuiz.length;
+
+
+    document.getElementById(
+        "quizQuestion"
+    ).textContent =
+        quiz.question;
+
+
+    const options =
+        document.getElementById(
+            "quizOptions"
+        );
+
+
+    options.innerHTML = "";
+
+
+    quiz.options.forEach(
+        function(option, index){
+
+            const button =
+                document.createElement(
+                    "button"
+                );
+
+
+            button.textContent =
+                option;
+
+
+            button.onclick =
+                function(){
+
+                    answerQuiz(index);
+
+                };
+
+
+            options.appendChild(
+                button
+            );
+
+        }
+    );
+
+
+    document.getElementById(
+        "quizFeedback"
+    ).textContent = "";
+
+
+    document.getElementById(
+        "quizNextButton"
+    ).style.display = "none";
+
+}
+
+
+/* =========================
+   ANSWER QUIZ
+========================= */
+
+function answerQuiz(index){
+
+    const quiz =
+        loveQuiz[currentQuizQuestion];
+
+
+    document.getElementById(
+        "quizFeedback"
+    ).textContent =
+        quiz.feedback;
+
+
+    document.getElementById(
+        "quizNextButton"
+    ).style.display =
+        "inline-block";
+
+
+    const buttons =
+        document.querySelectorAll(
+            "#quizOptions button"
+        );
+
+
+    buttons.forEach(
+        function(button){
+
+            button.disabled =
+                true;
+
+
+            button.style.opacity =
+                ".55";
+
+        }
+    );
+
+}
+
+
+/* =========================
+   NEXT QUESTION
+========================= */
+
+function nextQuizQuestion(){
+
+    currentQuizQuestion++;
+
+
+    if(
+        currentQuizQuestion >=
+        loveQuiz.length
+    ){
+
+        showQuizFinished();
+
+        return;
+
+    }
+
+
+    showQuizQuestion();
+
+}
+
+
+/* =========================
+   QUIZ FINISHED
+========================= */
+
+function showQuizFinished(){
+
+    document.getElementById(
+        "quizNumber"
+    ).textContent =
+        "Quiz Complete ❤️";
+
+
+    document.getElementById(
+        "quizQuestion"
+    ).textContent =
+        "You got one thing absolutely right...";
+
+
+    document.getElementById(
+        "quizOptions"
+    ).innerHTML = "";
+
+
+    document.getElementById(
+        "quizFeedback"
+    ).textContent =
+        "You are loved more than you know. ❤️";
+
+
+    const button =
+        document.getElementById(
+            "quizNextButton"
+        );
+
+
+    button.style.display =
+        "inline-block";
+
+
+    button.style.visibility =
+        "visible";
+
+
+    button.style.opacity =
+        "1";
+
+
+    button.textContent =
+        "Continue ❤️";
+
+
+    button.onclick =
+        function(){
+
+            openFinalPage();
+
+        };
+
+}
+
+
+/* =========================
+   QUIZ → FINAL PAGE
+========================= */
+
+function openFinalPage(){
+
+    document.getElementById(
+        "quizPage"
+    ).style.display = "none";
+
+
+    document.getElementById(
+        "finalPage"
+    ).style.display = "flex";
+
+}
+
+
+/* =========================
+   FINAL SURPRISE
+========================= */
+
+function openFinalSurprise(){
+
+    document.getElementById(
+        "finalPage"
+    ).style.display = "none";
+
+
+    document.getElementById(
+        "heartCertificatePage"
+    ).style.display = "flex";
+
+}
+
+</script>
+
+<!-- =========================
+     PAGE 2 — BIRTHDAY
+========================= -->
+
+<section id="birthdayPage">
+
+    <div class="birthday-content">
+
+        <div class="birthday-small">
+            Today is all about you ✨
+        </div>
+
+        <h1>
+            Happy Birthday
+            <span>My Love ❤️</span>
+        </h1>
+
+        <div class="birthday-video">
+
+            <div class="video-placeholder">
+                🎞️
+            </div>
+
+        </div>
+
+        <button
+            class="heart-button"
+            onclick="openHeart()"
+        >
+            Open My Heart ❤️
+        </button>
+
+    </div>
+
+</section>
+<!-- =========================
+     PAGE 3 — SOUNDTRACK
+========================= -->
+
+<section id="soundtrackPage">
+
+    <div class="soundtrack-content">
+
+        <div class="soundtrack-icon">
+            ♫
+        </div>
+
+        <p class="soundtrack-small">
+            A little piece of us
+        </p>
+
+        <h1>
+            The Soundtrack
+            <span>That Reminds Me of Us ❤️</span>
+        </h1>
+
+        <div class="music-card">
+
+            <div class="music-disc">
+                ♪
+            </div>
+
+            <div class="music-info">
+
+                <div class="music-title">
+                    Our Little Song
+                </div>
+
+                <div class="music-subtitle">
+                    A melody that feels like you
+                </div>
+
+            </div>
+
+            <button
+                class="music-play-button"
+                onclick="toggleLoveMusic()"
+            >
+                ▶
+            </button>
+
+        </div>
+
+        <button
+            class="memories-button"
+            onclick="openMemories()"
+        >
+            View Our Memories ❤️
+        </button>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     PAGE 4 — MEMORIES
+========================= -->
+
+<section id="memoriesPage">
+
+    <div class="memories-content">
+
+        <p class="memories-small">
+            Little pieces of us ✨
+        </p>
+
+        <h1>
+            Our Little
+            <span>Memories ❤️</span>
+        </h1>
+
+        <p class="memories-subtitle">
+            Some moments become memories,
+            some memories become forever.
+        </p>
+
+
+        <div class="memory-grid">
+
+            <div class="memory-photo">
+    <img src="photos/noor1.jpg" alt="Memory 1">
+</div>
+
+            <div class="memory-photo">
+    <img src="photos/noor5.jpg.jpeg" alt="Memory 3">
+</div>
+
+            <div class="memory-photo">
+    <img src="photos/noor2.jpg.jpeg" alt="Memory 2">
+</div>
+
+            <div class="memory-photo">
+    <img src="photos/noor6.jpg.jpeg" alt="Memory 3">
+</div>
+
+            <div class="memory-photo">
+    <img src="photos/noor3.jpg.jpeg" alt="Memory 3">
+</div>
+
+            <div class="memory-photo">
+    <img src="photos/noor4.jpg.jpeg" alt="Memory 3">
+</div>
+
+        </div>
+
+
+        <button
+            class="note-button"
+            onclick="readNote()"
+        >
+            Read The Note 💌
+        </button>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     PAGE 5 — THE NOTE
+========================= -->
+
+<section id="notePage">
+
+    <div class="note-content">
+
+        <p class="note-small">
+            Something from my heart ❤️
+        </p>
+
+        <h1>
+            A Note
+            <span>For You</span>
+        </h1>
+
+        <div class="note-paper">
+
+            <div id="loveNote"></div>
+
+        </div>
+
+        <button
+            id="lastThingButton"
+            class="note-button"
+            onclick="openQuiz()"
+        >
+            One Last Thing ✨
+        </button>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     PAGE 6 — LIVE QUIZ
+========================= -->
+
+<section id="quizPage">
+
+    <div class="quiz-content">
+
+        <p class="quiz-small">
+            Just one little game ❤️
+        </p>
+
+        <h1>
+            The Live
+            <span>Love Quiz 💕</span>
+        </h1>
+
+
+        <div class="quiz-card">
+
+            <div class="quiz-number" id="quizNumber">
+                Question 1 of 4
+            </div>
+
+
+            <h2 id="quizQuestion">
+                How much do I love you?
+            </h2>
+
+
+            <div
+                class="quiz-options"
+                id="quizOptions"
+            >
+
+                <button onclick="answerQuiz(0)">
+                    A little ❤️
+                </button>
+
+                <button onclick="answerQuiz(1)">
+                    A lot 💕
+                </button>
+
+                <button onclick="answerQuiz(2)">
+                    More than words can say ❤️
+                </button>
+
+                <button onclick="answerQuiz(3)">
+                    It's impossible to measure 🥹
+                </button>
+
+            </div>
+
+
+            <div
+                id="quizFeedback"
+                class="quiz-feedback"
+            ></div>
+
+        </div>
+
+
+        <button
+            id="quizNextButton"
+            class="note-button"
+            onclick="nextQuizQuestion()"
+            style="display:inline-block;"
+        >
+            Next Question ❤️
+        </button>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     FINAL SURPRISE PAGE
+========================= -->
+
+<section id="finalPage">
+
+    <div class="final-content">
+
+        <div class="final-key">
+            🔑
+        </div>
+
+        <p class="final-small">
+            One last little surprise...
+        </p>
+
+        <h1>
+            You Hold The Key
+            <span>To My Heart ❤️</span>
+        </h1>
+
+        <button
+            class="final-open-button"
+            onclick="openFinalSurprise()"
+        >
+            Open Surprise ❤️
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FINAL HEART PAGE
+========================= -->
+
+<section id="heartCertificatePage">
+
+    <div class="certificate-content">
+
+        <div class="final-video">
+
+    <img
+        class="couple-photo"
+        src="photos/us.jpg.jpeg"
+        alt="Us ❤️"
+    >
+
+</div>
+
+
+        <div class="certificate-card">
+
+            <p class="certificate-small">
+                CERTIFICATE OF
+            </p>
+
+            <h2>
+                My Heart ❤️
+            </h2>
+
+            <p class="certificate-text">
+                The owner of my world
+            </p>
+
+            <p class="certificate-love">
+                Love
+            </p>
+
+            <div class="certificate-line"></div>
+
+            <p class="certificate-present">
+                Presenting this heart to the person
+                who stole it completely.
+            </p>
+
+            <h3>
+                I Love You ❤️
+            </h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
