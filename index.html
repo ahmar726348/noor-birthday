@@ -575,17 +575,34 @@ body{
     text-align:center;
 
     background:
+
         radial-gradient(
-            circle at center,
-            #5A0000 0%,
-            #3A0000 38%,
-            #220000 70%,
-            #120000 100%
+            circle at 50% 18%,
+            rgba(255,180,190,.20) 0%,
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 12% 85%,
+            rgba(255,80,120,.18) 0%,
+            transparent 32%
+        ),
+
+        radial-gradient(
+            circle at 88% 75%,
+            rgba(255,140,160,.12) 0%,
+            transparent 30%
+        ),
+
+        linear-gradient(
+            145deg,
+            #3A0010 0%,
+            #650018 45%,
+            #1A0008 100%
         );
 
     z-index:20;
 }
-
 
 /* =========================
    CONTENT
@@ -829,37 +846,48 @@ body{
     /* =========================
        PAGE 3 — SOUNDTRACK
     ========================= */
+#soundtrackPage{
 
-    #soundtrackPage{
+    position:fixed;
 
-        position:fixed;
+    inset:0;
 
-        inset:0;
+    width:100vw;
+    height:100vh;
 
-        width:100vw;
-        height:100vh;
+    display:none;
 
-        display:none;
+    align-items:center;
+    justify-content:center;
 
-        align-items:center;
-        justify-content:center;
+    overflow:hidden;
 
-        overflow:hidden;
+    text-align:center;
 
-        text-align:center;
+    background:
 
-        background:
-            radial-gradient(
-                circle at center,
-                #5A0000 0%,
-                #390000 40%,
-                #210000 72%,
-                #120000 100%
-            );
+        radial-gradient(
+            circle at 50% 35%,
+            rgba(190,40,80,.18) 0%,
+            transparent 30%
+        ),
 
-        z-index:30;
-    }
+        radial-gradient(
+            circle at 85% 15%,
+            rgba(255,100,140,.10) 0%,
+            transparent 28%
+        ),
 
+        linear-gradient(
+            155deg,
+            #090007 0%,
+            #21000d 42%,
+            #3A0015 70%,
+            #0D0007 100%
+        );
+
+    z-index:30;
+}f
 
     .soundtrack-content{
 
@@ -1196,7 +1224,6 @@ body{
 /* =========================
    PAGE 4 — MEMORIES
 ========================= */
-
 #memoriesPage{
 
     position:fixed;
@@ -1217,11 +1244,22 @@ body{
 
     background:
         radial-gradient(
-            circle at center,
-            #590000 0%,
-            #380000 42%,
-            #210000 72%,
-            #120000 100%
+            circle at 20% 20%,
+            rgba(255,120,150,.20) 0%,
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 80% 75%,
+            rgba(255,60,100,.16) 0%,
+            transparent 32%
+        ),
+
+        linear-gradient(
+            135deg,
+            #120006 0%,
+            #30000d 45%,
+            #170008 100%
         );
 
     z-index:40;
@@ -1334,7 +1372,6 @@ body{
 
 
 /* PHOTO PLACEHOLDER */
-
 .memory-photo{
 
     position:relative;
@@ -1364,28 +1401,44 @@ body{
 
     box-shadow:
 
-        0 15px 30px
-        rgba(0,0,0,.5),
+        0 18px 35px
+        rgba(0,0,0,.55),
 
-        0 5px 10px
-        rgba(0,0,0,.3),
+        0 6px 12px
+        rgba(0,0,0,.35),
 
         inset 0 1px 0
-        rgba(255,255,255,.15),
+        rgba(255,255,255,.18),
 
-        inset 0 -2px 5px
-        rgba(0,0,0,.35);
+        inset 0 -3px 6px
+        rgba(0,0,0,.4);
 
-    transform:
-        perspective(800px)
-        translateZ(0);
+    transform-style:preserve-3d;
 
     transition:
-        transform .35s ease,
-        box-shadow .35s ease;
+        transform .4s ease,
+        box-shadow .4s ease;
+
+        .memory-photo:hover{
+
+    transform:
+        perspective(900px)
+        rotateX(7deg)
+        rotateY(-7deg)
+        translateY(-10px)
+        scale(1.03);
+
+    box-shadow:
+
+        0 30px 55px
+        rgba(0,0,0,.65),
+
+        0 12px 20px
+        rgba(0,0,0,.4);
+
 }
 
-.memory-photo:hover{
+}.memory-photo:hover{
 
     transform:
         translateY(-4px)
@@ -1503,7 +1556,6 @@ body{
 /* =========================
    PAGE 5 — THE NOTE
 ========================= */
-
 #notePage{
 
     position:fixed;
@@ -1523,17 +1575,28 @@ body{
     text-align:center;
 
     background:
+
         radial-gradient(
-            circle at center,
-            #5A0000 0%,
-            #380000 42%,
-            #210000 72%,
-            #120000 100%
+            circle at 50% 25%,
+            rgba(255,170,170,.12) 0%,
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 15% 85%,
+            rgba(180,40,70,.16) 0%,
+            transparent 30%
+        ),
+
+        linear-gradient(
+            160deg,
+            #100006 0%,
+            #26000b 45%,
+            #140007 100%
         );
 
     z-index:50;
 }
-
 
 /* CONTENT */
 
@@ -2271,14 +2334,11 @@ body{
 
 
 /* FINAL VIDEO */
-
 .final-video{
 
     width:420px;
 
     max-width:88vw;
-
-    aspect-ratio:16 / 9;
 
     margin-bottom:25px;
 
@@ -2296,8 +2356,28 @@ body{
 
         0 0 25px
         rgba(255,40,60,.12);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
 }
 
+.final-video-player{
+
+    display:block;
+
+    width:100%;
+
+    height:auto;
+
+    max-width:100%;
+
+    object-fit:contain;
+
+}
 
 .final-video-placeholder{
 
@@ -2502,15 +2582,35 @@ body{
 
     display:block;
 
-    object-fit:cover;
+    object-fit:contain;
 
 }
 
 .memory-photo img{
+
     display:block;
+
     width:100%;
     height:100%;
-    object-fit:cover;
+
+    object-fit:contain;
+
+    object-position:center;
+
+    transition:
+        transform .5s ease,
+        filter .5s ease;
+
+}
+
+.memory-photo:hover img{
+
+    transform:scale(1.06);
+
+    filter:
+        brightness(1.05)
+        saturate(1.08);
+
 }
 
 .couple-photo{
@@ -2518,6 +2618,47 @@ body{
     height:100%;
     display:block;
     object-fit:contain;
+}
+
+.note-video{
+
+    width:100%;
+
+    max-width:620px;
+
+    margin:25px auto;
+
+    padding:8px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #5A0808,
+            #210000
+        );
+
+    border:1px solid
+        rgba(255,255,255,.25);
+
+    border-radius:18px;
+
+    box-shadow:
+
+        0 20px 40px
+        rgba(0,0,0,.55),
+
+        0 8px 15px
+        rgba(0,0,0,.35),
+
+        inset 0 1px 0
+        rgba(255,255,255,.15);
+
+    transform:
+        perspective(900px)
+        translateZ(0);
+
+    overflow:hidden;
+
 }
 
 </style>
@@ -2628,7 +2769,7 @@ function unlockSurprise(){
         input.value.trim();
 
 
-    if(password === "noor"){
+    if(password === "0823"){
 
         message.textContent =
             "Unlocked with love ❤️";
@@ -2651,7 +2792,7 @@ function unlockSurprise(){
     }else{
 
         message.textContent =
-            "That's not the secret password ❤️";
+            "Hmm… nice try, but that’s not it 😏❤️";
 
         input.value = "";
 
@@ -2676,6 +2817,7 @@ function openHeart(){
     document.getElementById(
         "soundtrackPage"
     ).style.display = "flex";
+    startLoveMusic();
 
 }
 
@@ -2726,12 +2868,45 @@ function readNote(){
 function startLoveNote(){
 
     const note =
-        "My love, this little surprise is just a small way of telling you how special you are to me. Every moment, every smile, and every memory means more than I can put into words. ❤️";
+`Happy Birthday, My Love ❤️🎂
+
+Today is a very special day because it’s the day Allah blessed this world with you. 🥺❤️ And Alhamdulillah, I’m grateful that He made you such an important part of my life. 🤍
+
+اَنْتَ الْاَجْمَلُ فِیْ عَیْنَیْ
+میری نظر میں سب سے حسین ہو تم جاناں۔ 🥺🤌🏻❤️
+
+I honestly never thought someone could become this important to me. You’re someone I think about, pray for, and genuinely care about. 🥺❤️ Your presence makes difficult days feel a little easier, and even the smallest conversations with you can make me smile. 🫂
+
+I don’t want everything between us to be perfect. I just want us to always understand each other, support each other, laugh together, fix our misunderstandings, and keep growing together. 🤍🫶🏻
+
+Thank you for being patient with me, for listening to me, and for making even ordinary moments feel special. Your time, attention, and care mean more to me than any expensive gift ever could. ❤️
+
+On your birthday, I pray that Allah always protects you, keeps your heart peaceful, and gives you everything you’ve been praying and working for. May He fill your life with happiness, success, and countless beautiful moments. Ameen. 🤲🏻🌸
+
+Please always take care of yourself, eat on time, get enough rest, and never feel like you have to carry everything alone. 🤍
+
+تیرا ہونا انتہائی عزیز ہے مجھے،
+تیرے سوا نہیں آتا پیار مجھے کسی سے۔ 🎀❤️
+
+I hope this new year of your life brings you closer to your dreams and gives you many reasons to smile. And InshaAllah, I hope we continue making beautiful memories together and supporting each other through every chapter of life. 🫂❤️
+
+Happy Birthday once again. 🎂❤️
+May Allah always keep you happy, safe, and smiling.
+
+میں چاہوں تو بھی وہ الفاظ لکھ نہ پاؤں،
+جِس میں بیاں ہو جائے کہ کتنی محبت ہے مجھے تم سے۔ 🤌🏻🥺🎀`;
 
     const target =
         document.getElementById("loveNote");
 
+    const button =
+        document.getElementById("lastThingButton");
+
     target.textContent = "";
+
+    /* Hide button while note is typing */
+
+    button.style.display = "none";
 
     let i = 0;
 
@@ -2744,7 +2919,13 @@ function startLoveNote(){
 
             i++;
 
-            setTimeout(type,45);
+            setTimeout(type, 25);
+
+        }else{
+
+            /* Show button after note finishes */
+
+            button.style.display = "inline-block";
 
         }
 
@@ -2753,7 +2934,6 @@ function startLoveNote(){
     type();
 
 }
-
 
 /* =========================
    QUIZ DATA
@@ -3095,6 +3275,101 @@ function openFinalSurprise(){
 
 }
 
+/* =========================
+   SOUNDTRACK MUSIC
+========================= */
+
+function toggleLoveMusic(){
+
+    const music =
+        document.getElementById("loveMusic");
+
+    const button =
+        document.querySelector(
+            ".music-play-button"
+        );
+
+    if(!music) return;
+
+    if(music.paused){
+
+        music.play();
+
+        if(button){
+            button.textContent = "❚❚";
+        }
+
+    }else{
+
+        music.pause();
+
+        if(button){
+            button.textContent = "▶";
+        }
+
+    }
+
+}
+
+
+/* =========================
+   AUTO PLAY SOUNDTRACK
+========================= */
+
+function startLoveMusic(){
+
+    const music =
+        document.getElementById("loveMusic");
+
+    const button =
+        document.querySelector(
+            ".music-play-button"
+        );
+
+    if(!music) return;
+
+    music.currentTime = 0;
+
+    // Start completely silent
+    music.volume = 0;
+
+    music.play()
+        .then(function(){
+
+            if(button){
+                button.textContent = "❚❚";
+            }
+
+            let volume = 0;
+
+            const fadeIn =
+                setInterval(function(){
+
+                    volume += 0.02;
+
+                    if(volume >= 1){
+
+                        volume = 1;
+
+                        clearInterval(fadeIn);
+
+                    }
+
+                    music.volume = volume;
+
+                }, 100);
+
+        })
+        .catch(function(){
+
+            console.log(
+                "Autoplay was blocked by the browser."
+            );
+
+        });
+
+}
+
 </script>
 
 <!-- =========================
@@ -3114,13 +3389,20 @@ function openFinalSurprise(){
             <span>My Love ❤️</span>
         </h1>
 
-        <div class="birthday-video">
+<div class="birthday-video">
 
-            <div class="video-placeholder">
-                🎞️
-            </div>
+    <video
+        class="birthday-video-player"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+    >
+        <source src="birthday-video2.mp4" type="video/mp4">
+    </video>
 
-        </div>
+</div>
 
         <button
             class="heart-button"
@@ -3132,6 +3414,10 @@ function openFinalSurprise(){
     </div>
 
 </section>
+<!-- =========================
+     PAGE 3 — SOUNDTRACK
+========================= -->
+
 <!-- =========================
      PAGE 3 — SOUNDTRACK
 ========================= -->
@@ -3170,6 +3456,19 @@ function openFinalSurprise(){
                 </div>
 
             </div>
+
+            <video
+                id="loveMusic"
+                preload="auto"
+                playsinline
+                loop
+                style="display:none;"
+            >
+                <source
+                    src="WhatsApp Video 2026-08-22 at 2.07.23 AM.mp4"
+                    type="video/mp4"
+                >
+            </video>
 
             <button
                 class="music-play-button"
@@ -3213,35 +3512,33 @@ function openFinalSurprise(){
             some memories become forever.
         </p>
 
+<div class="memory-grid">
 
-        <div class="memory-grid">
+    <div class="memory-photo">
+        <img src="noor1.jpg" alt="Memory 1">
+    </div>
 
-            <div class="memory-photo">
-    <img src="photos/noor1.jpg" alt="Memory 1">
+    <div class="memory-photo">
+        <img src="noor2.jpeg" alt="Memory 2">
+    </div>
+
+    <div class="memory-photo">
+        <img src="noor3.jpeg" alt="Memory 3">
+    </div>
+
+    <div class="memory-photo">
+        <img src="noor4.jpeg" alt="Memory 4">
+    </div>
+
+    <div class="memory-photo">
+        <img src="noor5.jpeg" alt="Memory 5">
+    </div>
+
+    <div class="memory-photo">
+        <img src="noor6.jpeg" alt="Memory 6">
+    </div>
+
 </div>
-
-            <div class="memory-photo">
-    <img src="photos/noor5.jpg.jpeg" alt="Memory 3">
-</div>
-
-            <div class="memory-photo">
-    <img src="photos/noor2.jpg.jpeg" alt="Memory 2">
-</div>
-
-            <div class="memory-photo">
-    <img src="photos/noor6.jpg.jpeg" alt="Memory 3">
-</div>
-
-            <div class="memory-photo">
-    <img src="photos/noor3.jpg.jpeg" alt="Memory 3">
-</div>
-
-            <div class="memory-photo">
-    <img src="photos/noor4.jpg.jpeg" alt="Memory 3">
-</div>
-
-        </div>
-
 
         <button
             class="note-button"
@@ -3253,6 +3550,10 @@ function openFinalSurprise(){
     </div>
 
 </section>
+
+<!-- =========================
+     PAGE 5 — THE NOTE
+========================= -->
 
 <!-- =========================
      PAGE 5 — THE NOTE
@@ -3272,9 +3573,7 @@ function openFinalSurprise(){
         </h1>
 
         <div class="note-paper">
-
             <div id="loveNote"></div>
-
         </div>
 
         <button
@@ -3407,13 +3706,18 @@ function openFinalSurprise(){
 
         <div class="final-video">
 
-    <img
-        class="couple-photo"
-        src="photos/us.jpg.jpeg"
-        alt="Us ❤️"
-    >
+            <video
+                class="final-video-player"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
+            >
+                <source src="birthday-video.mp4.mp4" type="video/mp4">
+            </video>
 
-</div>
+        </div>
 
 
         <div class="certificate-card">
